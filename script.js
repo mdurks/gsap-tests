@@ -17,6 +17,7 @@ tl.to(".myHeading__text", {
 }, "-=1.5");
 tl.fromTo('.subtext', { opacity: 0, }, { opacity: 1, duration: 2, }, "-=1")
 tl.to('.ctaContainer__btn', { ease: Bounce.easeOut, y: "0%", opacity: .8, duration: 1, }, "-=1.75")
+tl.to('.ctaContainer', { overflow: "visible" }, "-=1.4")
 
 // gsap.to(".myHeading__text", { // selector text, Array, or object
 //   x: 100, // any properties (not limited to CSS)

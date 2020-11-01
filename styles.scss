@@ -18,10 +18,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 
-.container {
+.backImage {
     position: relative;
     width: 100%;
     height: 100%;
@@ -32,30 +33,53 @@ body {
     background-size: cover;
 }
 
-.myHeading {
+.headingGroup {
     position: absolute;
-    top: 40%;
-    left: 60%;
+    top: 37%;
+    left: 72%;
     transform: translate(-50%, -50%);
-    margin: 0;
-    font-family: 'Allura', cursive;
-    font-size: 90px;
-    font-weight: normal;
-    text-align: left;
-    overflow: hidden;
-}
-.subtext {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 30px;
-    font-weight: normal;
-    text-align: left;
+    width: 45%;
 }
 
-.myHeading__letter {
-    display: inline-block;
-    position: relative;
+.myHeading {
+    margin: 0;
+    font-family: 'Allura', cursive;
+    font-weight: normal;
+    text-align: left;
+    line-height: 0;
+    letter-spacing: 6px;
+
+    &Grp {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__text {
+        transform: translateY(-100%);
+        display: inline-block;
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+
+.subtext {
+    text-align: left;
+    line-height: 34px;
+}
+
+.ctaContainer {
+    text-align: left;
+    overflow: hidden;
+
+    &__btn {
+        opacity: 0;
+        transform: translateY(-100%);
+        display: inline-block;
+        padding: 15px 30px;
+        color: black;
+        background-color: white;
+        border-radius: 50px;
+        text-decoration: none;
+
+    }
 }
